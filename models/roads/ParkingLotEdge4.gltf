@@ -1,0 +1,114 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.0.5",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Parkinglot Edge 2 Model",
+            "rotation" : [
+                0,
+                -0.7071067094802856,
+                0,
+                0.70710688829422
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Road.002",
+            "pbrMetallicRoughness" : {}
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.019",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 46,
+            "max" : [
+                1.1920928955078125e-06,
+                0.25,
+                -1.1249187537032412e-06
+            ],
+            "min" : [
+                -15,
+                -5,
+                -15.000000953674316
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 46,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 46,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 72,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 552,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 552,
+            "byteOffset" : 552
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 368,
+            "byteOffset" : 1104
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 144,
+            "byteOffset" : 1472
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1616,
+            "uri" : "data:application/octet-stream;base64,mZkZwAAAAADq+5a1mJkZwAAAAAAFACDAZmYmwAAAAAAFACDAZmYmwAAAAAC8Apm1YmYmwAAAAAAAAEjB//9HwQAAAAABAHDBAABIwQAAAAAAAKC1ZmYmwAAAAAAFACDAlpkZwAAAAAAAAEjBlJkZwAAAAAAAAHDBYWYmwAAAAAAAAHDBYmYmwAAAAAAAAEjBmJkZwAAAAAAFACDAlpkZwAAAAAAAAEjBYmYmwAAAAAAAAEjBZmYmwAAAAAAFACDAAAAAAAAAAABT/5e1AACgNQAAAAAAAHDBmJkZwAAAAAAFACDAmZkZwAAAAADq+5a1AAAAAAAAAABT/5e1ZmYmwAAAAAC8Apm1lJkZwAAAAAAAAHDBlpkZwAAAAAAAAEjBAACgNQAAAAAAAHDBYWYmwAAAAAAAAHDBmplJwQAAgD5T/5e1mplJwQAAgD4BAHDBZWZuwQAAgD4BAHDBZmZuwQAAgD4AAKC1mplJwQAAgD5T/5e1AABIwZmZGT5T/5e1//9HwZmZGT4BAHDBmplJwQAAgD4BAHDB//9vwZmZGT4BAHDB//9vwQAAoMABAHDBAABwwQAAoMBT/5e1AABwwZmZGT4AAKC1ZWZuwQAAgD4BAHDB//9vwZmZGT4BAHDBAABwwZmZGT4AAKC1ZmZuwQAAgD4AAKC1AABIwZmZGT5T/5e1AABIwQAAAAAAAKC1//9HwQAAAAABAHDB//9HwZmZGT4BAHDBAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAACAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAAAAAgAAAgD8AAACAwAQ1PyUFNT/DN8IywAQ1PyUFNT/DN8IywAQ1PyUFNT/DN8IywAQ1PyUFNT/DN8IyAACAvwAAAACJiIizAACAvwAAAACJiIizAACAvwAAAACJiIizAACAvwAAAACJiIiz3QQ1vwkFNT+GRkGz3QQ1vwkFNT+GRkGz3QQ1vwkFNT+GRkGz3QQ1vwkFNT+GRkGz//9/PwAAAACJiIgz//9/PwAAAACJiIgz//9/PwAAAACJiIgz//9/PwAAAACJiIgzfr9fPwBzDD5+v18/AHMMPn6/Xz8Acww+fr9fPwBzDD7w+/09AHMMPvD7/T0Acww+8Pv9PQBzDD7w+/09AHMMPn6/Xz8Acww+fr9fPwBzDD5+v18/AHMMPn6/Xz8Acww+1vX7PZi/CT7W9fs9mL8JPtb1+z2Yvwk+1vX7PZi/CT7W9fs9mL8JPtb1+z2Yvwk+8Pv9PQBzDD7w+/09AHMMPvD7/T0Acww+8Pv9PQBzDD7w+/09AHMMPvD7/T0Acww+8Pv9PQBzDD7w+/09AHMMPkMHyj6AGQY+QwfKPoAZBj5DB8o+gBkGPkMHyj6AGQY+fr8fPwBzDD5+vx8/AHMMPn6/Hz8Acww+fr8fPwBzDD5+vx8/AHMMPn6/Hz8Acww+fr8fPwBzDD5+vx8/AHMMPn6/Hz8Acww+fr8fPwBzDD5+vx8/AHMMPn6/Hz8Acww+fr8fPwBzDD5+vx8/AHMMPn6/Hz8Acww+fr8fPwBzDD4AAAEAAgAAAAIAAwAEAAUABgAHAAQABgAIAAkACgAIAAoACwAMAA0ADgAMAA4ADwAQABEADQAQAA0ADAASABMAFAAGABUABwAWABcAGAAFAAQAGQAaABsAHAAaABwAHQAeAB8AIAAeACAAIQAiACMAJAAiACQAJQAmACcAKAAmACgAKQAqACsALAAqACwALQA="
+        }
+    ]
+}

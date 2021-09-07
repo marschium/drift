@@ -1,0 +1,404 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://scenes/ParkingLotCenter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/ParkingLotEdge1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/ParkingLotCorner2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/ParkingLotCorner3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/TrafficCone.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/ParkingLotCenter2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/ParkingLotEdge3.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/ParkingLotEdge4.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/Van.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/PortaPotty.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/Dumpster.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/Trolley.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/LampDouble.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/Suv.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/SuvLuxury.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/HatchbackSports.tscn" type="PackedScene" id=16]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.196078, 0.243137, 0.12549, 1 )
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 1 )
+size = Vector3( 400, 0.1, 400 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 75, 0.1, 75 )
+
+[node name="Map" type="Spatial"]
+
+[node name="ParkingLot" type="Spatial" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0 )
+
+[node name="ParkingLotCenter" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0244904, -9.53674e-07, -0.00473881 )
+
+[node name="ParkingLotCenter11" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
+
+[node name="ParkingLotCenter17" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0 )
+
+[node name="ParkingLotCenter24" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 0, 0 )
+
+[node name="ParkingLotCenter26" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0 )
+
+[node name="ParkingLotCenter9" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -15 )
+
+[node name="ParkingLotCenter16" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -15 )
+
+[node name="ParkingLotCenter23" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, -15 )
+
+[node name="ParkingLotCenter27" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 0, -15 )
+
+[node name="ParkingLotCenter10" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -15 )
+
+[node name="ParkingLotCenter2" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 0 )
+
+[node name="ParkingLotCenter8" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -15 )
+
+[node name="ParkingLotCenter3" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+
+[node name="ParkingLotCenter12" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 15 )
+
+[node name="ParkingLotCenter18" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 15 )
+
+[node name="ParkingLotCenter22" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 0, 15 )
+
+[node name="ParkingLotCenter25" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 15 )
+
+[node name="ParkingLotCenter4" parent="ParkingLot" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 15 )
+
+[node name="ParkingLotEdge24" parent="ParkingLot" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 105, 0, 0 )
+
+[node name="ParkingLotEdge23" parent="ParkingLot" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 105, 0, -15 )
+
+[node name="ParkingLotEdge22" parent="ParkingLot" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 105, 0, 15 )
+
+[node name="ParkingLotEdge4" parent="ParkingLot" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -30, 0, 0 )
+
+[node name="ParkingLotEdge3" parent="ParkingLot" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -30, 0, -15 )
+
+[node name="ParkingLotEdge5" parent="ParkingLot" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -30, 0, -30.01 )
+
+[node name="ParkingLotEdge9" parent="ParkingLot" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -30.01 )
+
+[node name="ParkingLotEdge15" parent="ParkingLot" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, -30 )
+
+[node name="ParkingLotEdge21" parent="ParkingLot" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, -30 )
+
+[node name="ParkingLotEdge10" parent="ParkingLot" instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -15, 0, 15 )
+
+[node name="ParkingLotEdge16" parent="ParkingLot" instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 60, 0, 15 )
+
+[node name="ParkingLotEdge20" parent="ParkingLot" instance=ExtResource( 7 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 105, 0, 15 )
+
+[node name="ParkingLotCenter5" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0 )
+
+[node name="ParkingLotCenter14" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45.0115, 0, 0.000624657 )
+
+[node name="ParkingLotCenter21" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 0 )
+
+[node name="ParkingLotCenter7" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -15 )
+
+[node name="ParkingLotCenter15" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, -15 )
+
+[node name="ParkingLotCenter20" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, -15 )
+
+[node name="ParkingLotCenter6" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 15 )
+
+[node name="ParkingLotCenter13" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, 15 )
+
+[node name="ParkingLotCenter19" parent="ParkingLot" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 15 )
+
+[node name="ParkingLotEdge6" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.987, 0, -30 )
+
+[node name="ParkingLotEdge8" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -30.001 )
+
+[node name="ParkingLotEdge13" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -30.001 )
+
+[node name="ParkingLotEdge18" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -30.001 )
+
+[node name="ParkingLotEdge19" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75, 0, -30.001 )
+
+[node name="ParkingLotEdge27" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, -30.001 )
+
+[node name="ParkingLotEdge7" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 0, 15 )
+
+[node name="ParkingLotEdge11" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 15, 0, 15 )
+
+[node name="ParkingLotEdge14" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 30, 0, 15 )
+
+[node name="ParkingLotEdge17" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 45, 0, 15 )
+
+[node name="ParkingLotEdge25" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 75, 0, 15 )
+
+[node name="ParkingLotEdge26" parent="ParkingLot" instance=ExtResource( 8 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 90, 0, 15 )
+
+[node name="ParkingLotCorner2" parent="ParkingLot" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, -30 )
+
+[node name="ParkingLotCorner7" parent="ParkingLot" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 120, 0, 15 )
+
+[node name="ParkingLotCorner6" parent="ParkingLot" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 105, 0, -30 )
+
+[node name="ParkingLotCorner5" parent="ParkingLot" instance=ExtResource( 4 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -30, 0, 15 )
+
+[node name="Furniture" type="Spatial" parent="."]
+
+[node name="ConeCircle" type="Spatial" parent="Furniture"]
+
+[node name="TrafficCone" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 37.2129, 0.704996, -7.71502 )
+
+[node name="TrafficCone2" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 38.6262, 0.704996, -7.71502 )
+
+[node name="TrafficCone6" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 37.91, 0.704996, -7.71502 )
+
+[node name="TrafficCone7" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 38.1704, 0.704996, -8.43359 )
+
+[node name="TrafficCone8" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 37.4208, 0.704996, -8.43359 )
+
+[node name="TrafficCone9" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 37.7728, 0.704996, -9.13832 )
+
+[node name="TrafficCone10" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.282776, 0, -0.959186, 0, 1, 0, 0.959186, 0, 0.282776, 44.7518, 0.704997, -13.473 )
+
+[node name="TrafficCone11" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 44.7379, 0.709904, -11.4745 )
+
+[node name="TrafficCone12" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( -0.478095, 0, -0.878308, 0, 1, 0, 0.878308, 0, -0.478095, 44.3685, 0.704996, -9.0864 )
+
+[node name="TrafficCone15" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( -0.48365, 0, -0.875262, 0, 1, 0, 0.875262, 0, -0.48365, 44.5648, 0.704996, -6.69376 )
+
+[node name="TrafficCone13" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 44.5863, 0.704996, -4.04723 )
+
+[node name="TrafficCone14" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 43.7574, 0.710146, -0.961715 )
+
+[node name="TrafficCone16" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 45.2006, 0.454042, 0.389202 )
+
+[node name="TrafficCone17" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( -0.236415, 0, -0.971652, 0, 1, 0, 0.971652, 0, -0.236415, 30.6336, 0.710146, -0.461555 )
+
+[node name="TrafficCone18" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 30.9739, 0.710146, -2.40455 )
+
+[node name="TrafficCone19" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 30.5512, 0.710146, -3.77561 )
+
+[node name="TrafficCone20" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 30.5146, 0.710146, -6.73542 )
+
+[node name="TrafficCone21" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 30.5105, 0.710146, -9.48825 )
+
+[node name="TrafficCone22" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 30.3616, 0.710146, -11.6681 )
+
+[node name="TrafficCone23" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 30.4886, 0.718513, -13.7807 )
+
+[node name="TrafficCone3" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 38.2846, 0.704996, -6.97766 )
+
+[node name="TrafficCone4" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 37.4752, 0.704996, -6.97766 )
+
+[node name="TrafficCone5" parent="Furniture/ConeCircle" instance=ExtResource( 5 )]
+transform = Transform( 0.0967311, 0, -0.995311, 0, 1, 0, 0.995311, 0, 0.0967311, 38.0236, 0.704996, -6.42379 )
+
+[node name="WorkSite" type="Spatial" parent="Furniture"]
+
+[node name="TrafficCone" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.97997, 0, 0.199146, 0, 1, 0, -0.199146, 0, 0.97997, -6.80728, 0.569532, -8.6167 )
+
+[node name="TrafficCone2" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.901213, 0, -0.433376, 0, 1, 0, 0.433376, 0, 0.901213, -3.12656, 0.753374, -8.28655 )
+
+[node name="TrafficCone3" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.802838, 0, -0.596197, 0, 1, 0, 0.596197, 0, 0.802838, -8.55789, 0.696109, -8.5685 )
+
+[node name="TrafficCone4" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.862761, 0, -0.505612, 0, 1, 0, 0.505612, 0, 0.862761, -4.99331, 0.406784, -8.65628 )
+
+[node name="TrafficCone5" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.666624, 0, 0.745395, 0, 1, 0, -0.745395, 0, 0.666624, -1.22322, 0.36025, -6.29176 )
+
+[node name="TrafficCone7" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.996163, 0, 0.0875209, 0, 1, 0, -0.0875209, 0, 0.996163, -1.22322, 0.36025, -3.56259 )
+
+[node name="TrafficCone8" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.844786, 0, 0.535105, 0, 1, 0, -0.535105, 0, 0.844786, -1.22322, 0.36025, -0.0545468 )
+
+[node name="TrafficCone9" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.844786, 0, 0.535105, 0, 1, 0, -0.535105, 0, 0.844786, -1.22322, 0.36025, 3.04413 )
+
+[node name="TrafficCone10" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.875861, 0, -0.482564, 0, 1, 0, 0.482564, 0, 0.875861, -1.22322, 0.36025, 5.95368 )
+
+[node name="TrafficCone11" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.251225, 0, 0.967929, 0, 1, 0, -0.967929, 0, 0.251225, -1.22322, 0.36025, 8.55457 )
+
+[node name="TrafficCone12" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.251225, 0, 0.967929, 0, 1, 0, -0.967929, 0, 0.251225, -8.36161, 0.36025, 8.55457 )
+
+[node name="TrafficCone13" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( -0.232851, 0, 0.972512, 0, 1, 0, -0.972512, 0, -0.232851, -6.08214, 0.36025, 8.55457 )
+
+[node name="TrafficCone14" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( -0.524788, 0, 0.851233, 0, 1, 0, -0.851233, 0, -0.524788, -3.82889, 0.36025, 8.55457 )
+
+[node name="TrafficCone6" parent="Furniture/WorkSite" instance=ExtResource( 5 )]
+transform = Transform( 0.940762, 0, -0.339066, 0, 1, 0, 0.339066, 0, 0.940762, -1.3051, 0.458174, -8.70057 )
+
+[node name="RigidBody" parent="Furniture/WorkSite" instance=ExtResource( 9 )]
+transform = Transform( 0.0134037, 0, 0.99991, 0, 1, 0, -0.99991, 0, 0.0134037, -8.02013, 0, -7.19522 )
+
+[node name="RigidBody2" parent="Furniture/WorkSite" instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.41032, 1.14116, 0 )
+
+[node name="RigidBody3" parent="Furniture/WorkSite" instance=ExtResource( 11 )]
+transform = Transform( 0.00286219, 0, 0.999996, 0, 1, 0, -0.999996, 0, 0.00286219, -8.81182, 0, -2.75815 )
+
+[node name="Trolleys" type="Spatial" parent="Furniture"]
+
+[node name="Spatial" parent="Furniture/Trolleys" instance=ExtResource( 12 )]
+transform = Transform( 0.906315, 0, 1.19524, 0, 1.5, 0, -1.19524, 0, 0.906315, 14.2477, 0, 0 )
+
+[node name="Spatial2" parent="Furniture/Trolleys" instance=ExtResource( 12 )]
+transform = Transform( 1.48961, 0, -0.176202, 0, 1.5, 0, 0.176202, 0, 1.48961, 15.3482, 0, 0 )
+
+[node name="Spatial3" parent="Furniture/Trolleys" instance=ExtResource( 12 )]
+transform = Transform( 1.37298, 0, -0.604096, 0, 1.5, 0, 0.604096, 0, 1.37298, 16.133, 0, 0.568681 )
+
+[node name="Spatial4" parent="Furniture/Trolleys" instance=ExtResource( 12 )]
+transform = Transform( 0.145097, 0, -1.49297, 0, 1.5, 0, 1.49297, 0, 0.145097, 14.7365, 0, 0.916025 )
+
+[node name="ParkedCars" type="Spatial" parent="Furniture"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0, 7 )
+
+[node name="RigidBody" parent="Furniture/ParkedCars" instance=ExtResource( 14 )]
+transform = Transform( 0.0114142, 0, 0.999935, 0, 1, 0, -0.999935, 0, 0.0114142, 1.12321, 0, 0.507737 )
+
+[node name="RigidBody2" parent="Furniture/ParkedCars" instance=ExtResource( 14 )]
+transform = Transform( 0.0114142, 0, 0.999935, 0, 1, 0, -0.999935, 0, 0.0114142, 1.12321, 0, -4.109 )
+
+[node name="RigidBody3" parent="Furniture/ParkedCars" instance=ExtResource( 15 )]
+transform = Transform( -0.044561, 0, 0.999007, 0, 1, 0, -0.999007, 0, -0.044561, 0.842178, 0, -6.54439 )
+
+[node name="RigidBody4" parent="Furniture/ParkedCars" instance=ExtResource( 16 )]
+transform = Transform( 0.104424, 0, 0.994533, 0, 1, 0, -0.994533, 0, 0.104424, 1.10794, 0, -12.0193 )
+
+[node name="Lights" type="Spatial" parent="."]
+
+[node name="LampDouble" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0898, 0, 7.70553 )
+
+[node name="LampDouble5" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.3596, 0, 7.70553 )
+
+[node name="LampDouble12" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.8103, 0, 7.70553 )
+
+[node name="LampDouble2" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2544, -0.123656, 0.00137043 )
+
+[node name="LampDouble6" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.2794, -0.123656, 0.00137043 )
+
+[node name="LampDouble11" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.7301, -0.123656, 0.00137043 )
+
+[node name="LampDouble3" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0898, -0.139742, -7.54232 )
+
+[node name="LampDouble7" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.1816, -0.139742, -7.54232 )
+
+[node name="LampDouble10" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.6323, -0.139742, -7.54232 )
+
+[node name="LampDouble4" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0935, 0.0188656, -15.6462 )
+
+[node name="LampDouble8" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26.3057, 0.0188656, -15.6462 )
+
+[node name="LampDouble9" parent="Lights" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.7564, 0.0188656, -15.6462 )
+
+[node name="Grass" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Grass"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0 )
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape" type="CollisionShape" parent="Grass/StaticBody"]
+shape = SubResource( 3 )

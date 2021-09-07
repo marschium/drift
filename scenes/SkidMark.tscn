@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/Trail/trail_3d.gd" type="Script" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0, 0, 0, 0.411765 )
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 0 )
+
+[node name="SkidMark" type="ImmediateGeometry"]
+material_override = SubResource( 2 )
+script = ExtResource( 1 )
+emit = false
+distance = 1.0
+lifetime = 0.5
+base_width = 0.2
+color_gradient = SubResource( 1 )
+wireframe_color = Color( 1, 0, 0, 1 )

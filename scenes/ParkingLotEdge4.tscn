@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/ParkingLotStaticBodyWall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/ParkingLotStaticBody.tscn" type="PackedScene" id=2]
+[ext_resource path="res://models/roads/ParkingLotEdge4.gltf" type="PackedScene" id=3]
+[ext_resource path="res://models/roads/Road.material" type="Material" id=4]
+
+[node name="ParkingLotEdge4" instance=ExtResource( 3 )]
+
+[node name="Parkinglot Edge 2 Model" parent="." index="0"]
+material/0 = ExtResource( 4 )
+
+[node name="StaticBody" parent="." index="1" instance=ExtResource( 2 )]
+
+[node name="StaticBody2" parent="." index="2" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, -13 )
